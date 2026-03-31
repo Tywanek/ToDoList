@@ -1,0 +1,13 @@
+# JetBrains / Android Studio
+*.iml
+.idea/
+.gradle/
+build/
+**/build/
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Cursor / AI
+.cursor/
