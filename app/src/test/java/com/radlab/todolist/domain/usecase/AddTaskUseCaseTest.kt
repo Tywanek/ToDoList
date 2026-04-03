@@ -14,7 +14,7 @@ class AddTaskUseCaseTest {
 
     @Before
     fun setUp() {
-        repository = mockk(relaxed = true)
+        repository = mockk()
         addTaskUseCase = AddTaskUseCase(repository)
     }
 
