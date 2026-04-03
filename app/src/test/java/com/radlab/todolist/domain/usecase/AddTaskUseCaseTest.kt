@@ -1,7 +1,10 @@
 package com.radlab.todolist.domain.usecase
 
 import com.radlab.todolist.domain.repository.TaskRepository
+import io.mockk.Runs
+import io.mockk.coEvery
 import io.mockk.coVerify
+import io.mockk.just
 import io.mockk.mockk
 import kotlinx.coroutines.test.runTest
 import org.junit.Before
@@ -22,6 +25,7 @@ class AddTaskUseCaseTest {
     fun `when message is not blank, task should be added`() = runTest {
         // Given
         val message = "New Task"
+        coEvery { repository.addTask(any()) } just Runs
 
         // When
         addTaskUseCase(message)
