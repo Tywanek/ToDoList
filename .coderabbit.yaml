@@ -1,0 +1,10 @@
+# .coderabbit.yaml configuration
+language: "en-US"
+reviews:
+  profile: "chill"
+  auto_review:
+    enabled: true
+    base_branches:
+      - ".*"
+chat:
+  auto_reply: true
