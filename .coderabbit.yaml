@@ -7,5 +7,4 @@ reviews:
     base_branches:
       - ".*"
 chat:
-  enabled: true
   auto_reply: true
